@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <title>Projetos - Stéfano</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Meus Projetos</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Início</a></li>
+                <li><a href="{{ url_for('projetos') }}">Projetos</a></li>
+                <li><a href="{{ url_for('contato') }}">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Projetos em Cibersegurança</h2>
+    
+        <div class="card">
+            <h3>📌 Declaração Profissional</h3>
+            <p>Elaboração de uma declaração profissional para exibir minhas habilidades e interesses na área de cibersegurança.</p>
+            <button class="btn">Ver Mais</button>
+        </div>
+    
+        <div class="card">
+            <h3>🛡️ Auditoria de Segurança</h3>
+            <p>Realizando uma auditoria completa para identificar vulnerabilidades e pontos de melhoria.</p>
+            <button class="btn">Ver Mais</button>
+        </div>
+    
+        <div class="card">
+            <h3>🌐 Segurança de Rede</h3>
+            <p>Analisando a estrutura de redes e garantindo protocolos de segurança eficientes.</p>
+            <button class="btn">Ver Mais</button>
+        </div>
+    </section>    
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stéfano | Portfólio de Cibersegurança</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <!-- Seção Hero: Apenas uma vez no topo -->
+    <div class="hero">
+        <h1>Bem-vindo ao meu Portfólio de Cibersegurança</h1>
+    </div>
+
+    <!-- Menu de navegação -->
+    <header>
+        <h1 id="typing-title"></h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Início</a></li>
+                <li><a href="{{ url_for('projetos') }}">Projetos</a></li>
+                <li><a href="{{ url_for('contato') }}">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção Sobre Mim -->
+    <div class="content">
+        <h2>Sobre Mim</h2>
+        <p>Sou um profissional de segurança cibernética apaixonado por proteger informações e mitigar riscos digitais.</p>
+    </div>
+
+    <!-- Banner Portfólio -->
+    <div class="banner">
+        <h2>PORTFÓLIO DE CIBERSEGURANÇA</h2>
+    </div>
+
+    <!-- Seção de Introdução -->
+    <section class="sobre">
+        <h2>Bem-vindo ao futuro da cibersegurança</h2>
+        <p>Protegendo informações, mitigando riscos e explorando o universo da segurança digital.</p>
+        <button class="btn">Saiba Mais</button>
+    </section>
+
+    <!-- Banner Projetos -->
+    <div class="banner projetos">
+        <h2>PROJETOS</h2>
+    </div>
+
+    <!-- Seção Projetos -->
+    <section class="projetos">
+        <div class="card">
+            <h3>🔍 Auditoria de Segurança</h3>
+            <p>Realizando análise detalhada para identificar falhas e melhorar a proteção de sistemas.</p>
+            <button class="btn">Ver Projeto</button>
+        </div>
+
+        <div class="card">
+            <h3>🛡️ Segurança de Redes</h3>
+            <p>Avaliação e implementação de soluções para garantir redes mais seguras.</p>
+            <button class="btn">Ver Projeto</button>
+        </div>
+
+        <div class="card">
+            <h3>🧑‍💻 Teste de Invasão</h3>
+            <p>Simulação de ataques para fortalecer a segurança contra ameaças digitais.</p>
+            <button class="btn">Ver Projeto</button>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>© 2024 Stéfano | Segurança Cibernética</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
